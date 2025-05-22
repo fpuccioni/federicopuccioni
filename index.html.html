@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Puccioni - Experienced GM/COO</title>
+    <meta name="description" content="Federico Puccioni - Experienced GM/COO specialized in growth, digital transformation, and international business leadership.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #1a237e; /* Deep indigo */
+        }
+        .section-title {
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700;
+            margin-bottom: 2rem; /* mb-8 */
+            color: #2c3e50; /* Dark blue-gray */
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); /* shadow-2xl */
+        }
+        .skill-tag {
+            background-color: #e0e7ff; /* Indigo 100 */
+            color: #3730a3; /* Indigo 700 */
+            padding: 0.5rem 1rem; /* py-2 px-4 */
+            border-radius: 9999px; /* rounded-full */
+            font-weight: 500;
+        }
+        .btn-primary {
+            background-color: #3b82f6; /* Blue 500 */
+            color: white;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb; /* Blue 600 */
+        }
+        .form-input {
+            width: 100%;
+            padding: 0.75rem; /* p-3 */
+            border: 1px solid #d1d5db; /* border-gray-300 */
+            border-radius: 0.5rem; /* rounded-lg */
+            margin-bottom: 1rem; /* mb-4 */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #3b82f6; /* Blue 500 */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Ring blue-500 */
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 500px;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-700">Federico Puccioni</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600">Skills</a>
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600">Experience</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Federico Puccioni</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Experienced GM/COO | Scaled €50M+ Operations | Digital Transformation Expert</p>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto">Driving International Growth & Profitability. Passionate about scaling businesses, operational excellence, and building high-performing teams.</p>
+            <a href="#contact" class="btn-primary text-lg">Get In Touch</a>
+            <a href="https://www.linkedin.com/in/federicopuccioni" target="_blank" rel="noopener noreferrer" class="ml-4 inline-flex items-center justify-center bg-white text-indigo-700 hover:bg-indigo-100 px-6 py-3 rounded-lg font-semibold transition duration-300 shadow-md">
+                <i class="fab fa-linkedin mr-2"></i> LinkedIn Profile
+            </a>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-6">
+                    I am a strategic GM/COO with over 20 years of experience dedicated to fostering growth and operational excellence within both Fortune 500 companies and dynamic high-growth startups. My track record includes delivering over €50M in revenue, achieving a 25% growth in EBITDA, and enhancing operational efficiency by 40%.
+                </p>
+                <p class="mb-6">
+                    My expertise lies in leading international market expansions and cultivating high-performing teams across Europe. I am deeply passionate about scaling businesses, optimizing operations, and empowering teams to succeed in diverse international markets.
+                </p>
+                <p>
+                    I'm always open to exploring new growth opportunities and discussing how my experience can contribute to an organization's next phase of success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Top Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-users-cog"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Strategic Leadership & Execution</h3>
+                    <p class="text-gray-600">Proven ability to define and implement strategic initiatives that drive business objectives and deliver tangible results.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Revenue Growth & Market Expansion</h3>
+                    <p class="text-gray-600">Expertise in identifying and capitalizing on market opportunities to expand reach and significantly increase revenue streams.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-globe-europe"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">International Team Leadership</h3>
+                    <p class="text-gray-600">Skilled in building, mentoring, and leading diverse, high-performing teams across multiple countries to achieve common goals.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-cogs"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Operational Excellence</h3>
+                    <p class="text-gray-600">Focused on optimizing processes, reducing costs, and improving efficiency to enhance overall business performance.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-desktop"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Digital Transformation</h3>
+                    <p class="text-gray-600">Experienced in guiding organizations through digital transformations, leveraging technology to innovate and improve.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Go-to-Market Strategy</h3>
+                    <p class="text-gray-600">Proficient in developing and executing comprehensive go-to-market strategies for new products and services.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                 <p class="text-lg text-gray-700 mb-4">Other key areas of expertise include:</p>
+                 <div class="flex flex-wrap justify-center gap-3">
+                    <span class="skill-tag">P&L Management</span>
+                    <span class="skill-tag">SaaS</span>
+                    <span class="skill-tag">Fintech</span>
+                    <span class="skill-tag">Digital Marketplaces</span>
+                    <span class="skill-tag">Startup Scaling</span>
+                    <span class="skill-tag">Investor Readiness</span>
+                    <span class="skill-tag">Customer-Centric Product Development</span>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Key Experience</h2>
+            <div class="space-y-12">
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Cubic Consult</h3>
+                    <p class="text-lg font-medium text-gray-700 mb-1">Fractional GM/COO | Growth & Digital Transformation Advisor</p>
+                    <p class="text-sm text-gray-500 mb-4">January 2023 - Present (Rome, Latium, Italy)</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Led market entry, growth acceleration, and commercial strategy development for startups and scale-ups in digital marketplaces, SaaS, and fintech.</li>
+                        <li>Developed go-to-market strategies, revenue models, and international expansion frameworks for clients including MedLea, I3P, PPK Innovation, and Collecto.</li>
+                        <li>Advised executives & founders on scaling strategies, investor readiness, and digital transformation.</li>
+                    </ul>
+                </div>
+
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Catawiki</h3>
+                    <p class="text-lg font-medium text-gray-700 mb-1">General Manager & VP</p>
+                    <p class="text-sm text-gray-500 mb-4">March 2018 - December 2022 (Italy)</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Led strategy, growth, and P&L management for Europe's leading curated marketplace (€50M+ division) across five countries.</li>
+                        <li>Doubled revenue from €25M to €50M while increasing EBITDA by 25%.</li>
+                        <li>Reduced operational costs by 40% through process automation and portfolio optimization.</li>
+                        <li>Expanded into 5 key European markets, creating scalable commercial frameworks and growth strategies.</li>
+                        <li>Led a team of 50+ professionals, building a high-performance, results-oriented culture.</li>
+                    </ul>
+                    <p class="text-lg font-medium text-gray-700 mt-6 mb-1">Country Manager</p>
+                    <p class="text-sm text-gray-500 mb-4">January 2016 - March 2018 (Rome Area, Italy)</p>
+                     <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Launched and scaled Catawiki's Italian operations, driving market penetration and rapid revenue growth from €0 to €17M in two years.</li>
+                        <li>Developed a dual-sided marketplace strategy, generating €5M from professional sellers.</li>
+                    </ul>
+                </div>
+
+                <div class="card p-8">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-2">Lloyds Banking Group</h3>
+                    <p class="text-lg font-medium text-gray-700 mb-1">Senior Strategy Manager</p>
+                    <p class="text-sm text-gray-500 mb-4">May 2014 - December 2015 (London)</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Established and led new strategic innovation unit within consumer finance division.</li>
+                        <li>Architected digital transformation roadmap, resulting in successful launch of direct-to-consumer fintech product.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-center text-lg text-gray-700 mb-10">
+                    Interested in discussing growth opportunities or how I can help your organization? Please fill out the form below or reach out via email or LinkedIn.
+                </p>
+                <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card p-8">
+  <input type="hidden" name="form-name" value="contact">
+  <input type="hidden" name="bot-field">
+
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary w-full md:w-auto">Send Message</button>
+                    </div>
+                </form>
+                <div class="mt-12 text-center">
+                    <p class="text-gray-700 text-lg mb-2">You can also reach me directly:</p>
+                    <p class="text-indigo-600 font-medium text-lg">
+                        <i class="fas fa-envelope mr-2"></i> <a href="mailto:fpuccioni@gmail.com" class="hover:underline">fpuccioni@gmail.com</a>
+                    </p>
+                    <p class="text-indigo-600 font-medium text-lg mt-2">
+                        <i class="fas fa-phone mr-2"></i> +39 328 936 3987
+                    </p>
+                     <p class="text-indigo-600 font-medium text-lg mt-2">
+                        <i class="fab fa-linkedin mr-2"></i> <a href="https://www.linkedin.com/in/federicopuccioni" target="_blank" rel="noopener noreferrer" class="hover:underline">linkedin.com/in/federicopuccioni</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-10 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> Federico Puccioni. All rights reserved.</p>
+            <p class="text-sm mt-2">Building Bridges to Growth and Excellence.</p>
+        </div>
+    </footer>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="text-6xl text-green-500 mb-4"><i class="fas fa-check-circle"></i></div>
+            <h3 class="text-2xl font-semibold mb-3">Message Sent!</h3>
+            <p class="text-gray-700">Thank you for reaching out, Federico. I will get back to you shortly.</p>
+            <button onclick="closeModal()" class="mt-6 btn-primary">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Contact Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const successModal = document.getElementById('successModal');
+
+            event.preventDefault(); // Prevent default form submission
+
+            // Basic validation (though 'required' attribute handles most)
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name === '' || email === '' || message === '') {
+                // This is a fallback, usually browser validation will catch this
+                // You could show a custom error message here if desired
+                console.error('Form fields cannot be empty.');
+                return;
+            }
+            
+            // Here you would typically send the data to a backend server
+            // For this example, we'll just simulate success and show the modal.
+            console.log('Form Submitted:');
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            // Show success modal
+            successModal.style.display = 'block';
+
+            // Reset form
+            contactForm.reset();
+        });
+
+        // Close Modal Function
+        function closeModal() {
+            successModal.style.display = 'none';
+        }
+
+        // Close modal if user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target == successModal) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>
